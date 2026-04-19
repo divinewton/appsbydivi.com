@@ -10,15 +10,17 @@ export default function Home() {
           <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
             Coming Soon
           </h1>
-          <h1 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl mt-5">
+          <h1 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl mt-5 sm:ml-10 sm:mr-10">
             Experience native iOS apps with UI by Divi.
           </h1>
-          <button
-            type="button"
+          <a
+            href="https://www.divinewton.com/"
+            target="_blank"
+            rel="noreferrer"
             className="mt-8 inline-flex h-12 items-center justify-center rounded-full bg-slate-950 px-6 text-sm font-medium text-white transition-transform duration-200 hover:-translate-y-0.5 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2"
           >
             Learn More
-          </button>
+          </a>
         </section>
       </main>
     </div>
