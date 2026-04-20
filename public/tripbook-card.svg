@@ -1,0 +1,18 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="card" x1="180" y1="140" x2="1420" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0E7FF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#BFDBFE" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="140" y="120" width="1320" height="660" rx="44" fill="url(#card)"/>
+  <circle cx="1260" cy="260" r="120" fill="#DBEAFE"/>
+  <circle cx="1300" cy="640" r="90" fill="#C7D2FE"/>
+  <text x="240" y="350" fill="#0F172A" font-size="92" font-family="Arial, Helvetica, sans-serif" font-weight="700">TripBook</text>
+  <text x="240" y="440" fill="#334155" font-size="44" font-family="Arial, Helvetica, sans-serif">Capture every route and memory.</text>
+</svg>
