@@ -14,7 +14,7 @@ export default function TripBookPage() {
             alt="Tripbook iOS App"
             width={2500}
             height={1406}
-            className="w-full h-auto rounded-2xl"
+            className="w-full h-auto rounded-2xl pt-10"
           />
         </div>
         <p className="mt-4 max-w-2xl text-lg text-[#868589]">
