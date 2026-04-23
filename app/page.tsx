@@ -12,15 +12,15 @@ export default function Home() {
       <main className="px-6 pb-12 sm:px-10">
         <section className="mx-auto flex max-w-6xl flex-col items-center py-14 text-center sm:py-20">
           <h1 className="text-4xl font-semibold tracking-tight text-[#1d1d1f] sm:text-6xl">
-            Coming Soon
+            Thoughtfully Designed <br /> iOS Experiences
           </h1>
           <h2 className="mt-5 text-2xl font-semibold tracking-tight text-[#1d1d1f] sm:mx-10 sm:text-3xl">
-            Experience native iOS apps with UI by Divi.
+            In Development
           </h2>
           <Button
             href="https://www.divinewton.com/"
             target="_blank"
-            className="mt-8"
+            className="mt-5"
           >
             More on divinewton.com
           </Button>
@@ -32,13 +32,13 @@ export default function Home() {
               key={card.id}
               className="card grid w-full overflow-hidden rounded-3xl md:grid-cols-[minmax(280px,420px)_1fr]"
             >
-              <div className="relative min-h-64">
+              <div>
                 <Image
                   src={card.imageSrc}
                   alt={card.imageAlt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 420px"
+                  width={2500}
+                  height={1406}
+                  className="w-full h-auto"
                   priority={card.id === 1}
                 />
               </div>
