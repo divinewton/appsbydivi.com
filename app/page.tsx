@@ -5,10 +5,6 @@ import { appCards } from "../lib/config/appCards";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#f5f5f7] text-[#1d1d1f]">
-      <header className="flex items-center justify-between px-6 py-5 sm:px-10">
-        <span className="text-lg font-semibold tracking-tight text-[#1d1d1f]">Apps by Divi</span>
-      </header>
-
       <main className="px-6 pb-12 sm:px-10">
         <section className="mx-auto flex max-w-6xl flex-col items-center py-14 text-center sm:py-20">
           <h1 className="text-4xl font-semibold tracking-tight text-[#1d1d1f] sm:text-6xl">
