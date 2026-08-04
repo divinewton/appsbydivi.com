@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Button from "./Button";
 
 function BrandIcon({
   src,
@@ -81,7 +82,7 @@ export default function TopNav() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/40 bg-[#f5f5f7]/70 px-6 py-4 backdrop-blur-xl sm:px-10">
-      <nav aria-label="Primary">
+      <nav aria-label="Primary" className="mx-auto flex w-full max-w-7xl items-center justify-between">
         <div ref={menuRef} className="relative inline-flex items-center gap-1">
           <Link
             href={currentHomeHref}
@@ -170,6 +171,15 @@ export default function TopNav() {
             </div>
           ) : null}
         </div>
+
+        {isTripBookRoute && (
+          <Button
+            href="https://testflight.apple.com/join/46kPpayM"
+            target="_blank"
+          >
+            Join the Beta
+          </Button>
+        )}
       </nav>
     </header>
   );
