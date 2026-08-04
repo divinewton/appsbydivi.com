@@ -21,12 +21,14 @@ export default function TripBookPage() {
           TripBook is an iOS app to map your memories and track your global progress.
           Development is in progress. Privacy details are available below.
         </p>
-        <Button
-          href="/tripbook/privacy"
-          className="mt-8"
-        >
-          Privacy Policy
-        </Button>
+        <div className="flex flex-row items-center gap-4 mt-8">
+          <Button href="/tripbook/privacy">
+            Privacy Policy
+          </Button>
+          <Button href="mailto:feedback@appsbydivi.com">
+            Contact Us
+          </Button>
+        </div>
       </section>
     </main>
   );
