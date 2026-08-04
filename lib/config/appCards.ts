@@ -4,10 +4,11 @@ export const appCards: AppCard[] = [
   new AppCard(
     1,
     "TripBook: Country Tracker",
-    "An iOS app to map your memories and track your global progress.",
-    "/tripbook.png",
+    "A beautiful, private space to document your journey across the globe, turning your past adventures into a stunning visual atlas.",
+    "/tripbook-cover.png",
     "TripBook iOS app screenshots",
     "/tripbook",
+    "/tripbook-icon.svg",
   ),
   new AppCard(
     2,
