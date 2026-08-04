@@ -8,18 +8,11 @@ export default function Home() {
       <main className="px-6 pb-12 sm:px-10">
         <section className="mx-auto flex max-w-6xl flex-col items-center py-14 text-center sm:py-20">
           <h1 className="text-4xl font-semibold tracking-tight text-[#1d1d1f] sm:text-6xl">
-            Thoughtfully Designed <br /> iOS Experiences
+            Thoughtfully Designed <br /> Native Experiences
           </h1>
-          <h2 className="mt-5 text-2xl font-semibold tracking-tight text-[#1d1d1f] sm:mx-10 sm:text-3xl">
-            In Development
-          </h2>
-          <Button
-            href="https://www.divinewton.com/"
-            target="_blank"
-            className="mt-5"
-          >
-            More on divinewton.com
-          </Button>
+          <span className="mt-5 inline-flex items-center rounded-full bg-[#1d1d1f]/5 border border-[#1d1d1f]/10 px-5 py-2.5 text-sm font-semibold text-[#1d1d1f]/80">
+            Coming Soon to iOS
+          </span>
         </section>
 
         <section className="mx-auto mt-14 flex w-full max-w-6xl flex-col gap-6">
@@ -40,9 +33,20 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col justify-center p-6 sm:p-8">
-                <h3 className="text-2xl font-semibold tracking-tight text-[#1d1d1f] sm:text-3xl">
-                  {card.title}
-                </h3>
+                <div className="flex items-center gap-3">
+                  {card.iconSrc && (
+                    <Image
+                      src={card.iconSrc}
+                      alt={`${card.title} Icon`}
+                      width={36}
+                      height={36}
+                      className="rounded-[22%] border border-black/5"
+                    />
+                  )}
+                  <h3 className="text-2xl font-semibold tracking-tight text-[#1d1d1f] sm:text-3xl">
+                    {card.title}
+                  </h3>
+                </div>
                 <p className="mt-3 max-w-2xl text-base leading-relaxed text-[#868589] sm:text-lg">
                   {card.description}
                 </p>

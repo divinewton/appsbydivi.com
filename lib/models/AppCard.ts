@@ -6,6 +6,7 @@ export class AppCard {
     public readonly imageSrc: string,
     public readonly imageAlt: string,
     public readonly href?: string,
+    public readonly iconSrc?: string,
   ) {}
 
   get isAvailable(): boolean {
