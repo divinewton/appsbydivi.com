@@ -1,10 +1,91 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "../components/Button";
 import { appCards } from "../lib/config/appCards";
 
+export const metadata: Metadata = {
+  title: "Apps by Divi - Thoughtfully Designed Native Experiences",
+  description: "Experience thoughtfully designed native iOS apps. Building beautiful, private, and offline-ready mobile experiences that respect your privacy.",
+  authors: [{ name: "Divi Newton", url: "https://appsbydivi.com" }],
+  creator: "Divi Newton",
+  keywords: [
+    "Divianadin Newton",
+    "Divi Newton",
+    "Apps by Divi",
+    "UI by Divi",
+    "divinewton",
+    "TripBook",
+    "iOS apps",
+    "native iOS apps",
+    "design portfolio",
+    "mobile app designer",
+    "privacy-first apps",
+  ],
+  icons: {
+    icon: "/appsbydivi.svg",
+    shortcut: "/appsbydivi.svg",
+    apple: "/appsbydivi.svg",
+  },
+  openGraph: {
+    title: "Apps by Divi - Thoughtfully Designed Native Experiences",
+    description: "Experience thoughtfully designed native iOS apps. Building beautiful, private, and offline-ready mobile experiences that respect your privacy.",
+    url: "https://appsbydivi.com",
+    siteName: "Apps by Divi",
+    images: [
+      {
+        url: "/tripbook-cover.png",
+        width: 1200,
+        height: 630,
+        alt: "TripBook: Country Tracker Cover",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Apps by Divi - Thoughtfully Designed Native Experiences",
+    description: "Experience thoughtfully designed native iOS apps. Building beautiful, private, and offline-ready mobile experiences that respect your privacy.",
+    images: ["/tripbook-cover.png"],
+  },
+};
+
 export default function Home() {
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Divianadin Newton",
+    "alternateName": "Divi Newton",
+    "url": "https://appsbydivi.com",
+    "logo": "https://appsbydivi.com/appsbydivi.svg",
+    "sameAs": [
+      "https://www.divinewton.com"
+    ]
+  };
+
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Apps by Divi",
+    "url": "https://appsbydivi.com",
+    "logo": "https://appsbydivi.com/appsbydivi.svg",
+    "founder": {
+      "@type": "Person",
+      "name": "Divianadin Newton"
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-[#f5f5f7] text-[#1d1d1f]">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+      />
+      <div className="min-h-screen bg-[#f5f5f7] text-[#1d1d1f]">
       <main className="px-6 pb-12 sm:px-10">
         <section className="mx-auto flex max-w-6xl flex-col items-center py-14 text-center sm:py-20">
           <h1 className="text-4xl font-semibold tracking-tight text-[#1d1d1f] sm:text-6xl">
@@ -74,5 +155,6 @@ export default function Home() {
         </section>
       </main>
     </div>
+    </>
   );
 }

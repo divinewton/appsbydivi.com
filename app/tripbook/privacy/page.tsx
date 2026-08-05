@@ -1,3 +1,51 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - TripBook: Country Tracker",
+  description: "Read the Privacy Policy for TripBook: Country Tracker. Learn how your travel logs, visited countries, and personal memories are stored locally and kept completely private.",
+  authors: [{ name: "Divi Newton", url: "https://appsbydivi.com" }],
+  creator: "Divi Newton",
+  keywords: [
+    "Divianadin Newton",
+    "Divi Newton",
+    "Apps by Divi",
+    "UI by Divi",
+    "divinewton",
+    "TripBook",
+    "Privacy Policy",
+    "data privacy",
+    "no tracking",
+    "local data storage",
+  ],
+  icons: {
+    icon: "/tripbook-icon.svg",
+    shortcut: "/tripbook-icon.svg",
+    apple: "/tripbook-icon.svg",
+  },
+  openGraph: {
+    title: "Privacy Policy - TripBook: Country Tracker",
+    description: "Read the Privacy Policy for TripBook: Country Tracker. Learn how your travel logs, visited countries, and personal memories are stored locally and kept completely private.",
+    url: "https://appsbydivi.com/tripbook/privacy",
+    siteName: "Apps by Divi",
+    images: [
+      {
+        url: "/tripbook-cover.png",
+        width: 1200,
+        height: 630,
+        alt: "TripBook: Country Tracker Cover Image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy - TripBook: Country Tracker",
+    description: "Read the Privacy Policy for TripBook: Country Tracker. Learn how your travel logs, visited countries, and personal memories are stored locally and kept completely private.",
+    images: ["/tripbook-cover.png"],
+  },
+};
+
 export default function TripBookPrivacyPage() {
   return (
     <main className="min-h-screen bg-[#f5f5f7] px-6 py-12 text-[#1d1d1f] sm:px-10">
