@@ -32,31 +32,76 @@ export default function TopNav() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const isTripBookRoute = pathname.startsWith("/tripbook");
+  const isOverlapRoute = pathname.startsWith("/overlap");
 
-  const currentLabel = isTripBookRoute ? "TripBook" : "Apps by Divi";
-  const currentHomeHref = isTripBookRoute ? "/tripbook" : "/";
-  const switchLabel = isTripBookRoute ? "Apps by Divi" : "TripBook";
-  const switchHref = isTripBookRoute ? "/" : "/tripbook";
   const appsIconSrc = "/appsbydivi.svg";
   const tripBookIconSrc = "/tripbook-icon.svg";
+  const overlapIconSrc = "/overlap-icon.svg";
   const brandIconSrc = "/divinewton-icon.svg";
 
-  const dropdownItems = [
-    {
-      href: switchHref,
-      label: switchLabel,
-      external: false,
-      icon: isTripBookRoute ? appsIconSrc : tripBookIconSrc,
-    },
-    {
-      href: "https://www.divinewton.com/",
-      label: "divinewton.com",
-      external: true,
-      icon: brandIconSrc,
-    },
-  ];
+  let currentLabel = "Apps by Divi";
+  let currentHomeHref = "/";
+  let currentIconSrc = appsIconSrc;
 
-  const currentIconSrc = isTripBookRoute ? tripBookIconSrc : appsIconSrc;
+  if (isTripBookRoute) {
+    currentLabel = "TripBook";
+    currentHomeHref = "/tripbook";
+    currentIconSrc = tripBookIconSrc;
+  } else if (isOverlapRoute) {
+    currentLabel = "Overlap";
+    currentHomeHref = "/overlap";
+    currentIconSrc = overlapIconSrc;
+  }
+
+  const dropdownItems = [];
+
+  if (isTripBookRoute) {
+    dropdownItems.push({
+      href: "/",
+      label: "Apps by Divi",
+      external: false,
+      icon: appsIconSrc,
+    });
+    dropdownItems.push({
+      href: "/overlap",
+      label: "Overlap",
+      external: false,
+      icon: overlapIconSrc,
+    });
+  } else if (isOverlapRoute) {
+    dropdownItems.push({
+      href: "/",
+      label: "Apps by Divi",
+      external: false,
+      icon: appsIconSrc,
+    });
+    dropdownItems.push({
+      href: "/tripbook",
+      label: "TripBook",
+      external: false,
+      icon: tripBookIconSrc,
+    });
+  } else {
+    dropdownItems.push({
+      href: "/tripbook",
+      label: "TripBook",
+      external: false,
+      icon: tripBookIconSrc,
+    });
+    dropdownItems.push({
+      href: "/overlap",
+      label: "Overlap",
+      external: false,
+      icon: overlapIconSrc,
+    });
+  }
+
+  dropdownItems.push({
+    href: "https://www.divinewton.com/",
+    label: "divinewton.com",
+    external: true,
+    icon: brandIconSrc,
+  });
 
   useEffect(() => {
     function handlePointerDown(event: MouseEvent) {
@@ -143,7 +188,7 @@ export default function TopNav() {
 
                 return (
                   <div key={item.label}>
-                    {index === 1 ? <div className="my-1 h-px bg-[#e5e5ea]" /> : null}
+                    {index === dropdownItems.length - 1 ? <div className="my-1 h-px bg-[#e5e5ea]" /> : null}
                     {item.external ? (
                       <a
                         href={item.href}
