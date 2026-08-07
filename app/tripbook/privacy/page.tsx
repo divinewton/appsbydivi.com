@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy - TripBook: Country Tracker",
   description: "Read the Privacy Policy for TripBook: Country Tracker. Learn how your travel logs, visited countries, and personal memories are stored locally and kept completely private.",
+  alternates: {
+    canonical: "https://appsbydivi.com/tripbook/privacy",
+  },
   authors: [{ name: "Divi Newton", url: "https://appsbydivi.com" }],
   creator: "Divi Newton",
   keywords: [

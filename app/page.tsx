@@ -6,6 +6,9 @@ import { appCards } from "../lib/config/appCards";
 export const metadata: Metadata = {
   title: "Apps by Divi - Thoughtfully Designed Native Experiences",
   description: "Experience thoughtfully designed native iOS apps. Building beautiful, private, and offline-ready mobile experiences that respect your privacy.",
+  alternates: {
+    canonical: "https://appsbydivi.com",
+  },
   authors: [{ name: "Divi Newton", url: "https://appsbydivi.com" }],
   creator: "Divi Newton",
   keywords: [

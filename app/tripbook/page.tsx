@@ -4,6 +4,9 @@ import TripBookClient from "./TripBookClient";
 export const metadata: Metadata = {
   title: "TripBook: Country Tracker",
   description: "A beautiful, private space to document your journey across the globe, turning your past adventures into a stunning visual atlas.",
+  alternates: {
+    canonical: "https://appsbydivi.com/tripbook",
+  },
   authors: [{ name: "Divi Newton", url: "https://appsbydivi.com" }],
   creator: "Divi Newton",
   keywords: [
