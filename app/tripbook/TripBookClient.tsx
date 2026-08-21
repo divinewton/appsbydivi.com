@@ -98,15 +98,14 @@ export default function TripBookClient() {
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <Button
-            href="https://testflight.apple.com/join/46kPpayM"
-            target="_blank"
-          >
-            Join the Beta
-          </Button>
-          <span className="inline-flex items-center rounded-full bg-[#1d1d1f]/5 border border-[#1d1d1f]/10 px-5 py-2.5 text-sm font-semibold text-[#1d1d1f]/80">
-            Coming Soon to iOS
-          </span>
+          <div className="flex flex-col items-center gap-1.5">
+            <a href="https://apps.apple.com/us/app/tripbook-country-tracker/id6761938921?itscg=30200&itsct=apps_box_badge&mttnsubad=6761938921" style={{ display: "inline-block" }}>
+              <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1787270400" alt="Download on the App Store" style={{ height: "50px", width: "auto", verticalAlign: "middle", objectFit: "contain" }} />
+            </a>
+            <span className="text-xs text-[#868589]">
+              Requires iOS 26 or later.
+            </span>
+          </div>
         </div>
       </section>
 

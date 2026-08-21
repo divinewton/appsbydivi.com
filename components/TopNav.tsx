@@ -219,10 +219,10 @@ export default function TopNav() {
 
         {isTripBookRoute && (
           <Button
-            href="https://testflight.apple.com/join/46kPpayM"
+            href="https://apps.apple.com/us/app/tripbook-country-tracker/id6761938921?itscg=30200&itsct=apps_box_link&mttnsubad=6761938921"
             target="_blank"
           >
-            Join the Beta
+            Get the App
           </Button>
         )}
       </nav>
