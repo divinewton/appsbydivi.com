@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://appsbydivi.com/tripbook/privacy",
   },
+  itunes: {
+    appId: "6761938921",
+  },
   authors: [{ name: "Divi Newton", url: "https://appsbydivi.com" }],
   creator: "Divi Newton",
   keywords: [
