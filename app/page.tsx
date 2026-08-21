@@ -96,7 +96,7 @@ export default function Home() {
             Thoughtfully Designed <br /> Native Experiences
           </h1>
           <span className="mt-5 inline-flex items-center rounded-full bg-[#1d1d1f]/5 border border-[#1d1d1f]/10 px-5 py-2.5 text-sm font-semibold text-[#1d1d1f]/80">
-            Coming Soon to iOS
+            Now Available to iOS
           </span>
         </section>
 
