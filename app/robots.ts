@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://appsbydivi.com/sitemap.xml",
+    sitemap: "https://www.appsbydivi.com/sitemap.xml",
   };
 }

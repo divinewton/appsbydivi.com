@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://appsbydivi.com"),
+  metadataBase: new URL("https://www.appsbydivi.com"),
   title: {
     default: "Apps by Divi",
     template: "%s | Apps by Divi",
   },
   description: "Experience thoughtfully designed native iOS apps. Building beautiful, private, and offline-ready mobile experiences that respect your privacy.",
-  authors: [{ name: "Divi Newton", url: "https://appsbydivi.com" }],
+  authors: [{ name: "Divi Newton", url: "https://www.appsbydivi.com" }],
   creator: "Divi Newton",
   keywords: [
     "Divianadin Newton",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Apps by Divi",
     description: "Experience thoughtfully designed native iOS apps. Building beautiful, private, and offline-ready mobile experiences that respect your privacy.",
-    url: "https://appsbydivi.com",
+    url: "https://www.appsbydivi.com",
     siteName: "Apps by Divi",
     images: [
       {

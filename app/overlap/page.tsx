@@ -4,7 +4,10 @@ import OverlapClient from "./OverlapClient";
 export const metadata: Metadata = {
   title: "Overlap: What to Watch",
   description: "Find the Overlap between your friends' tastes and unlock personalized Movie and TV Show recommendations.",
-  authors: [{ name: "Divi Newton", url: "https://appsbydivi.com" }],
+  alternates: {
+    canonical: "https://www.appsbydivi.com/overlap",
+  },
+  authors: [{ name: "Divi Newton", url: "https://www.appsbydivi.com" }],
   creator: "Divi Newton",
   keywords: [
     "Divianadin Newton",
@@ -27,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Overlap: What to Watch",
     description: "Find the Overlap between your friends' tastes and unlock personalized Movie and TV Show recommendations.",
-    url: "https://appsbydivi.com/overlap",
+    url: "https://www.appsbydivi.com/overlap",
     siteName: "Apps by Divi",
     images: [
       {
@@ -64,14 +67,14 @@ export default function OverlapPage() {
     "author": {
       "@type": "Person",
       "name": "Divi Newton",
-      "url": "https://appsbydivi.com",
+      "url": "https://www.appsbydivi.com",
     },
     "publisher": {
       "@type": "Organization",
       "name": "Apps by Divi",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://appsbydivi.com/appsbydivi.svg",
+        "url": "https://www.appsbydivi.com/appsbydivi.svg",
       },
     },
   };

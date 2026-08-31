@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: "Privacy Policy - TripBook: Country Tracker",
   description: "Read the Privacy Policy for TripBook: Country Tracker. Learn how your travel logs, visited countries, and personal memories are stored locally and kept completely private.",
   alternates: {
-    canonical: "https://appsbydivi.com/tripbook/privacy",
+    canonical: "https://www.appsbydivi.com/tripbook/privacy",
   },
   itunes: {
     appId: "6761938921",
   },
-  authors: [{ name: "Divi Newton", url: "https://appsbydivi.com" }],
+  authors: [{ name: "Divi Newton", url: "https://www.appsbydivi.com" }],
   creator: "Divi Newton",
   keywords: [
     "Divianadin Newton",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Privacy Policy - TripBook: Country Tracker",
     description: "Read the Privacy Policy for TripBook: Country Tracker. Learn how your travel logs, visited countries, and personal memories are stored locally and kept completely private.",
-    url: "https://appsbydivi.com/tripbook/privacy",
+    url: "https://www.appsbydivi.com/tripbook/privacy",
     siteName: "Apps by Divi",
     images: [
       {

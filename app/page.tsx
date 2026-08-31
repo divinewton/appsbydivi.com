@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   title: "Apps by Divi - Thoughtfully Designed Native Experiences",
   description: "Experience thoughtfully designed native iOS apps. Building beautiful, private, and offline-ready mobile experiences that respect your privacy.",
   alternates: {
-    canonical: "https://appsbydivi.com",
+    canonical: "https://www.appsbydivi.com",
   },
-  authors: [{ name: "Divi Newton", url: "https://appsbydivi.com" }],
+  authors: [{ name: "Divi Newton", url: "https://www.appsbydivi.com" }],
   creator: "Divi Newton",
   keywords: [
     "Divianadin Newton",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Apps by Divi - Thoughtfully Designed Native Experiences",
     description: "Experience thoughtfully designed native iOS apps. Building beautiful, private, and offline-ready mobile experiences that respect your privacy.",
-    url: "https://appsbydivi.com",
+    url: "https://www.appsbydivi.com",
     siteName: "Apps by Divi",
     images: [
       {
@@ -60,8 +60,8 @@ export default function Home() {
     "@type": "Person",
     "name": "Divianadin Newton",
     "alternateName": "Divi Newton",
-    "url": "https://appsbydivi.com",
-    "logo": "https://appsbydivi.com/appsbydivi.svg",
+    "url": "https://www.appsbydivi.com",
+    "logo": "https://www.appsbydivi.com/appsbydivi.svg",
     "sameAs": [
       "https://www.divinewton.com"
     ]
@@ -71,8 +71,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Apps by Divi",
-    "url": "https://appsbydivi.com",
-    "logo": "https://appsbydivi.com/appsbydivi.svg",
+    "url": "https://www.appsbydivi.com",
+    "logo": "https://www.appsbydivi.com/appsbydivi.svg",
     "founder": {
       "@type": "Person",
       "name": "Divianadin Newton"

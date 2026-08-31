@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: "TripBook: Country Tracker",
   description: "A beautiful, private space to document your journey across the globe, turning your past adventures into a stunning visual atlas.",
   alternates: {
-    canonical: "https://appsbydivi.com/tripbook",
+    canonical: "https://www.appsbydivi.com/tripbook",
   },
   itunes: {
     appId: "6761938921",
   },
-  authors: [{ name: "Divi Newton", url: "https://appsbydivi.com" }],
+  authors: [{ name: "Divi Newton", url: "https://www.appsbydivi.com" }],
   creator: "Divi Newton",
   keywords: [
     "Divianadin Newton",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TripBook: Country Tracker",
     description: "A beautiful, private space to document your journey across the globe, turning your past adventures into a stunning visual atlas.",
-    url: "https://appsbydivi.com/tripbook",
+    url: "https://www.appsbydivi.com/tripbook",
     siteName: "Apps by Divi",
     images: [
       {
@@ -72,14 +72,14 @@ export default function TripBookPage() {
     "author": {
       "@type": "Person",
       "name": "Divi Newton",
-      "url": "https://appsbydivi.com",
+      "url": "https://www.appsbydivi.com",
     },
     "publisher": {
       "@type": "Organization",
       "name": "Apps by Divi",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://appsbydivi.com/appsbydivi.svg",
+        "url": "https://www.appsbydivi.com/appsbydivi.svg",
       },
     },
   };
